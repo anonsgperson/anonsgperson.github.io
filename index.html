@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCKChat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>CCKChat</h1>
+        <h2>This is a 100% anonmymous chat/forum/sharing site I dont collect ANY data other thn the posts!</h2>
+        <div id="post-form">
+            <textarea id="post-text" class="area" placeholder="Share your 'thoughts' here :D "></textarea>
+            <button id="post-button" onclick="post()"><center>📤</center></button>
+        </div>
+    </center>
+
+    <div id="app">
+        <div id="posts-container">
+            <!-- Posts will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
